@@ -1,5 +1,5 @@
 import 'tailwindcss/tailwind.css';
-import YouTubeTile from '@/components/YouTubeTile';
+import YouTubeTile from '@/components/youtube-tile/youtube-tile';
 import { Item, YoutubeSearchListResponse } from '@/types/type';
 
 interface HomeProps {
@@ -7,10 +7,9 @@ interface HomeProps {
 }
 
 export default function Home({ videos }: HomeProps) {
-  console.log(videos);
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="flex flex-wrap">
+      <div className="flex flex-wrap justify-center">
         {videos ? (
           <>
             {videos.items.map((video: Item) => (

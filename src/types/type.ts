@@ -17,7 +17,7 @@ interface Localized {
   title: string;
 }
 
-interface Snippet {
+export interface Snippet {
   categoryId: string;
   channelId: string;
   channelTitle: string;
@@ -27,9 +27,10 @@ interface Snippet {
   publishedAt: string;
   thumbnails: Thumbnails;
   title: string;
+  tags: string[];
 }
 
-interface Statistics {
+export interface Statistics {
   commentCount: string;
   favoriteCount: string;
   likeCount: string;
