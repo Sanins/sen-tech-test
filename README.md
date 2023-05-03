@@ -3,9 +3,11 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 ## Getting Started
 You'll need to get your own api key from the youtube api docs https://developers.google.com/youtube/v3/docs/videos/list and create a .env.local file in the root directory with the below.
 
+```
 {
-    NEXT_PUBLIC_YOUTUBE_API_KEY=<API KEY>
+    NEXT_PUBLIC_YOUTUBE_API_KEY=12345
 }
+```
 
 First, run the development server:
 
