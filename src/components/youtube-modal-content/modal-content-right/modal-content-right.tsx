@@ -4,7 +4,7 @@ interface ModalContentRightProps {
   statistics: Statistics;
 }
 
-export default function ModalContentLeft({ statistics }: ModalContentRightProps) {
+export default function ModalContentRight({ statistics }: ModalContentRightProps) {
   return (
     <div className="sm:w-1/4 p-4">
       <h3 className="mb-2">

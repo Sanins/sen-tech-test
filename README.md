@@ -1,6 +1,11 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
+You'll need to get your own api key from the youtube api docs https://developers.google.com/youtube/v3/docs/videos/list and create a .env.local file in the root directory with the below.
+
+{
+    NEXT_PUBLIC_YOUTUBE_API_KEY=<API KEY>
+}
 
 First, run the development server:
 
@@ -14,27 +19,8 @@ pnpm dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-# Frontend Engineer Tech Test
 
-## Guide
-Develop a production quality application based on the below requirements.  
-It allows us to gauge your experience in writing code that is intelligible, easy to maintain, loosely coupled and robust.  
-We're more focussed on patterns and practices than UI.  
-Use any tech of your choice.  
-
-## Requirements
-Build a simple application to browse and watch videos using the [wireframes](./wireframes.png), it should provide:  
-
-- List of videos with their title and thumbnail
-- Ability to watch a video
-- Display likes, views and tags of a video
-
-Use the [Youtube API](https://developers.google.com/youtube/v3/docs/videos/list) for data.  
-
-## Timing
-We respect that your time is valuable and don't expect you to spend any longer than a couple of hours.  
-Prioritise the most important parts and don't worry if you run out of time.  
-Add to your readme any parts that are missing and clearly detail next steps.  
-
-## Submission
-Either send us the repository url or zip the project.  
+## introduction
+I developed this application using Next.js to utilize its server-side rendering feature for fetching YouTube API data. Instead of using CSS preprocessors like SASS or LESS, I opted to use Tailwind CSS since I hadn't used it before, and it was an opportunity to learn a new library while completing a tech test. I added one unit test to demonstrate my testing skills, but I intend to unit test the entire application. I designed each component to be reusable and easily testable.
+## Next Steps
+In the future, I would like to improve error handling when fetching data, providing users with more detailed feedback. Additionally, I would implement some form of logging to gain insight into any frontend errors. I also would not use a model, as models are not very accessible. Ideally, I would create a new page to allow users to bookmark their favorite videos' URLs. The reason I created a model in this instance is that the wireframe did not display a new URL, so I assumed it must be a model. If I encountered this issue in a work environment, I would ask for clarification.
